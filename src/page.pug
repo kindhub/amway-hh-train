@@ -1,0 +1,174 @@
+extends ./pug/layout
+
+block content
+	<!-- START HEADER -->
+	.section.header 
+		.container 
+			.header__inner 
+				a.header__logo(href="#home")
+					img.logo(src="images/logo.svg", alt="")
+				.header__social 
+					+icon('insta', 'header__social-icon')
+					a.header__social-link(href="https://www.instagram.com/amwaylife_channel/" target='_blank') instagram.com 
+	<!-- END HEADER -->
+
+	<!-- START FIRST SCREEN -->
+	.section.first-screen 
+		.first-screen__img-wrapper 
+			img.first-screen__img(src="images/first-screen/f-s-img.jpg", alt="")
+		.container 
+			.first-screen__text 
+				p Помогаем людям жить лучшей здоровой жизнью
+	<!-- END FIRST SCREEN -->
+	
+	<!-- START ABOUT -->
+	.section.about 
+		.container 
+			.about__inner 
+				.about__img-wrapper 
+					img.about__img(src="images/about/about-img.png", alt="")
+				.about__content 
+					.heading.heading--left.heading--mb-short О нас
+					.about__content-text 
+						p Компания основана в 1959 году друзьями и деловыми партнерами Джеем Ван Анделомом и Ричем ДеВосом в городе Эйда, штат Мичиган, США. <br> Сегодня руководство компанией осуществляет второе поколение Ван Анделов и ДеВосов — их сыновья: Даг ДеВос и Стив Ван Андел - соучредители Amway Corp.
+	<!-- END ABOUT -->
+	
+	<!-- START AMWAY RESULTS -->
+	.section.amway-results.section--long-pt 
+		.container 
+			.amway-results__inner 
+				.amway-results__tabs 
+					.amway-results__tab-item.content-tab.content-tab--active(href="#world") Amway в мире
+					.amway-results__tab-item.content-tab(href="#kz") Amway в Казахстане
+				.content.content--active.content--opacity-1.content__world
+					.amway-results__cards 
+						.amway-results__card
+							.amway-results__card-numb №1
+							.amway-results__card-text среди компаний прямых продаж
+						.amway-results__card
+							.amway-results__card-numb 100+
+							.amway-results__card-text стран присутствия
+						.amway-results__card
+							.amway-results__card-numb 15 000+
+							.amway-results__card-text сотрудников Amway по всему миру
+						.amway-results__card
+							.amway-results__card-numb 8.9 <span>млрд</span> $
+							.amway-results__card-text объем продаж в 2021
+				.content.content__kz
+					.amway-results__cards 
+						.amway-results__card
+							.amway-results__card-numb с 2013
+							.amway-results__card-text компания представлена в Казахстане
+						.amway-results__card
+							.amway-results__card-numb 34
+							.amway-results__card-text сотрудник по Казахстану
+						.amway-results__card
+							.amway-results__card-numb 34,5 <span>млрд</span> ₸
+							.amway-results__card-text объем продаж в 2021
+					.amway-results__content-note 
+						.amway-results__content-text Является членом деловых ассоциаций:
+							p Американская торговая палата в Республике Казахстан
+							p Ассоциация прямых продаж Республики Казахстан
+	<!-- END AMWAY RESULTS -->
+	
+	<!-- START PRINCIPLES -->
+	.section.principles.section--long-pt
+		.heading.heading--mb-medium Наши принципы
+		.swiper-container.card-slider(data-arrow-prev=".tmpl-hh__card-slider-arrow-prev" data-arrow-next=".tmpl-hh__card-slider-arrow-next")
+			.swiper-wrapper
+				.swiper-slide.slider-card-slide
+					.principles__content.principles__content--hope
+						.principles__content-title Надежда
+						.principles__content-text Мы вдохновляем мечтать смело и создаем условия, в которых надежды реализуются
+					.principles__img-wrapper 
+						img.principles__img(src="images/principles/1.jpg", alt="")
+				.swiper-slide.slider-card-slide
+					.principles__img-wrapper 
+						img.principles__img(src="images/principles/2.jpg", alt="")
+					.principles__content.principles__content--family
+						.principles__content-title Семья
+						.principles__content-text Мы поддерживаем стремление защищать и развивать свою семью, поэтому соблюдаем баланс между работой и личной жизнью
+				.swiper-slide.slider-card-slide
+					.principles__content.principles__content--award
+						.principles__content-title Вознаграждение
+						.principles__content-text Ваш вклад в общий успех всегда оценен по достоинству
+					.principles__img-wrapper 
+						img.principles__img(src="images/principles/3.jpg", alt="")
+				.swiper-slide.slider-card-slide
+					.principles__img-wrapper 
+						img.principles__img(src="images/principles/4.jpg", alt="")
+					.principles__content.principles__content--freedom
+						.principles__content-title Свобода
+						.principles__content-text Спланируйте сами, как будет развиваться ваша карьера. Даже в глобальном масштабе
+			.card-slider__pagination
+				span.swiper-pagination-bullet
+				span.swiper-pagination-bullet
+				span.swiper-pagination-bullet
+				span.swiper-pagination-bullet
+				span.swiper-pagination-bullet
+			.slider-arrows.card-slider-arrows
+				.slider-arrow.slider-arrow--prev.card-slider-arrow-prev
+					+icon("left-arrow", "slider-arrow__icon")
+				.slider-arrow.slider-arrow--next.card-slider-arrow-next
+					+icon("right-arrow", "slider-arrow__icon")
+			+nav-btn
+	<!-- END PRINCIPLES -->
+
+	<!-- START AMWAY WORK -->
+	.section.amway-work.section--long-pt
+		.container 
+			.heading.heading--mb-medium Работа в Amway это
+			.amway-work__inner
+				.amway-work__card 
+					.amway-work__card-img-wrapper 
+						img.amway-work__card-img(src="images/amway-work/1.jpg", alt="")
+					.amway-work__card-content 
+						.amway-work__card-title.amway-work__card-title--first Достойное вознаграждение
+						.amway-work__card-text
+							p Стабильная заработная плата
+							p Премия по итогам работы за год
+							p Полное соблюдение Трудового Кодекса РК
+				.amway-work__card 
+					.amway-work__card-img-wrapper 
+						img.amway-work__card-img(src="images/amway-work/2.jpg", alt="")
+					.amway-work__card-content 
+						.amway-work__card-title.amway-work__card-title--second Забота  о здоровье и благополучии сотрудников
+						.amway-work__card-text
+							p Добровольное медицинское страхование и страхование жизни
+							p Дни овощей и фруктов офисе
+							p Скидки на продукцию Amway
+				.amway-work__card 
+					.amway-work__card-img-wrapper 
+						img.amway-work__card-img(src="images/amway-work/3.jpg", alt="")
+					.amway-work__card-content 
+						.amway-work__card-title.amway-work__card-title--third Перспективы
+						.amway-work__card-text
+							p Прозрачная система управления своим карьерным ростом
+							p Программы обучения, в том числе индивидуальные
+							p Деловые и обучающие поездки, в том числе международные
+							p Обучение английскому языку
+				.amway-work__card 
+					.amway-work__card-img-wrapper 
+						img.amway-work__card-img(src="images/amway-work/4.jpg", alt="")
+					.amway-work__card-content 
+						.amway-work__card-title.amway-work__card-title--fourth Баланс между работой и личной жизнью
+						.amway-work__card-text
+							p Возможность работы по гибкому графику
+							p Возможность работать из дома несколько дней в неделю
+							p Корпоративные мероприятия для сотрудников и членов из семей
+	<!-- END AMWAY WORK -->
+	
+	<!-- START OUR OFFICE -->
+	section.our-office.section--long-pt
+			.heading.heading--mb-long Наш офис
+			.swiper-container.gallery-slider(data-arrow-prev=".tmpl-hh__gallery-slider-arrow-prev" data-arrow-next=".tmpl-hh__gallery-slider-arrow-next")
+				.swiper-wrapper
+					+slider-gallery-slide("/images/our-office/1.jpg")
+					+slider-gallery-slide("/images/our-office/2.jpg")
+					+slider-gallery-slide("/images/our-office/3.jpg")
+				.slider-arrows.gallery-slider-arrows
+					.slider-arrow.slider-arrow--prev.gallery-slider-arrow-prev
+						+icon("prew-arrow", "slider-arrow__icon")
+					.slider-arrow.slider-arrow--next.gallery-slider-arrow-next
+						+icon("next-arrow", "slider-arrow__icon")
+	<!-- END OUR OFFICE -->

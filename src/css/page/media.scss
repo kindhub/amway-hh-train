@@ -1,0 +1,270 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+
+// BREAKPOINT LAPTOP
+@media (max-width: $ss_laptop) {
+	.container{
+		max-width: 880px;
+	}
+	.wrapper{
+		font-size: 16px;
+	}
+	.amway-results{
+		&__card-numb{
+			font-size: 38px;
+		}
+		&__card-numb span{
+			font-size: 24px;
+		}
+		&__card{
+			height: 200px;
+		}
+	}
+	.principles{ 
+		&__content {
+			padding: 50px 30px;
+			height: 260px;
+		}
+		&__content-title {
+			font-size: 25px;
+			margin-bottom: 15px;
+		}
+	}
+	.card-slider-arrow-prev {
+		padding: 18px 19px 18px 16px;
+		left: 30px;
+	}
+	.card-slider-arrow-next {
+		padding: 18px 15px 18px 20px;
+		right: 30px;
+	}
+}
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+	.wrapper{
+		font-size: 15px;
+	}
+	.container{
+		padding: 0 15px;
+	}
+	.heading{
+		font-size: 30px;
+	}
+	.first-screen__text {
+		font-size: 35px;
+	}
+	.about{
+		&__inner{
+			flex-wrap: wrap;
+			justify-content: center;
+		} 
+		&__img-wrapper{
+			width: 100%;
+		}
+		&__content{
+			margin-top: 20px;
+			width: 100%;
+		}
+	}
+	.amway-results{
+		&__tab-item {
+			font-size: 25px;
+		}
+		&__cards {
+			justify-content: space-evenly;
+		}
+		&__card:nth-child(3) {
+			margin-top: 30px;
+		}
+		&__card:nth-child(4) {
+			margin-top: 30px;
+		}
+		&__card {
+			width: 40%;
+		}
+	}
+	.principles{ 
+		&__content {
+			padding: 25px 20px;
+			height: 170px;
+			width: 38%;
+		}
+		&__content-title {
+			font-size: 17px;
+			margin-bottom: 10px;
+		}
+		&__content-text{
+			font-size: 12px;
+		}
+	}
+	.card-slider{ 
+		&__pagination {
+			display: none;
+		}
+		&-arrow-prev,
+		&-arrow-next{
+			position: inherit;
+		}
+		&-arrows {
+			justify-content: center;
+			margin-top: 20px;
+		}
+		&-arrow-prev {
+			padding: 18px 19px 18px 16px;
+			margin-right: 30px;
+		}
+		&-arrow-next {
+			padding: 18px 15px 18px 20px;
+		}
+	}
+	.amway-work{
+		&__inner{
+			justify-content: space-evenly;
+		}
+		&__card{
+			width: 40%;
+		}
+		&__card:nth-child(3){
+			margin-top: 30px;
+		}
+		&__card:nth-child(4){
+			margin-top: 30px;
+		}
+	}
+
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper{
+		font-size: 14px;
+	}
+	.about{
+		&__img-wrapper{
+			text-align: center;
+		}
+	}
+	.amway-results{
+		&__card-numb{
+			font-weight: 600;
+			font-size: 30px;
+			margin-bottom: 0;
+		}
+		&__card-numb span{
+			font-size: 18px;
+		}
+		&__card{
+			height: 170px;
+			width: 37%;
+		}
+		&__card:nth-child(3) {
+			margin-top: 40px;
+		}
+		&__card:nth-child(4) {
+			margin-top: 40px;
+		}
+	}
+	.principles{ 
+		&__content {
+			padding: 30px 20px;
+			height: 120px;
+			width: 80%;
+		}
+		&__img-wrapper {
+			width: 80%;
+		}
+		&__content-title {
+			font-size: 17px;
+			margin-bottom: 10px;
+		}
+		&__content-text{
+			font-size: 12px;
+		}
+	}
+	.gallery-slider{ 
+		&-arrow-prev {
+			padding: 17px 20px 15px 18px;
+		}
+		&-arrow-next {
+			padding: 17px 12px 15px 14px;
+		}
+	}
+}
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper{
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+	.heading {
+		font-size: 25px;
+	}
+	.logo{
+		width: 120px;
+	}
+	.header{ 
+		padding: 15px 0 15px;
+		&__social-icon{
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.first-screen__text {
+		font-size: 18px;
+	}
+	.amway-results{
+		&__tab-item {
+			font-size: 14px;
+		}
+		&__card-numb{
+			font-weight: 600;
+			font-size: 30px;
+			margin-bottom: 0;
+		}
+		&__card-numb span{
+			font-size: 18px;
+		}
+		&__card{
+			height: 150px;
+			width: 100%;
+		}
+		&__card:nth-child(2) {
+			margin-top: 30px;
+		}
+
+		&__card:nth-child(3) {
+			margin-top: 30px;
+		}
+		&__card:nth-child(4) {
+			margin-top: 30px;
+		}
+	}
+	.content {
+		padding: 30px 0 20px;
+	}
+	.card-slider{ 
+		&-arrow-prev,
+		&-arrow-next {
+			background: none;
+		}
+	}
+	.amway-work{ 
+		&__card {
+			width: 67%;
+		}
+		&__card:nth-child(2) {
+			margin-top: 20px;
+		}
+		&__card:nth-child(3) {
+			margin-top: 20px;
+		}
+		&__card:nth-child(4) {
+			margin-top: 20px;
+		}
+		&__card-img-wrapper{
+			text-align: center;
+		}
+	}
+}
