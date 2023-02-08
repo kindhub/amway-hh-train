@@ -358,12 +358,12 @@
 	justify-content: space-between;
 }
 
-.slider-arrow__icon {
+.slider-arrow__icon-card {
 	width: 26.7px;
 	height: 26.7px;
 }
 
-.slider-arrow__icon use {
+.slider-arrow__icon-card use {
 	fill: none;
 }
 
@@ -487,9 +487,17 @@
 	width: 0.9em;
 	height: 0.9em;
 	cursor: pointer;
-	transition: all .3s;
+	transition: all .5s;
 	border: 2px solid #3E5495;
 	border-radius: 100px;
+	color: $color_primary;
+}
+
+.gallery-slider-arrow-next:hover,
+.gallery-slider-arrow-prev:hover {
+	color: #FAFAFA;
+	background: #262626;
+	border-color: #262626;
 }
 
 .gallery-slider-arrows {
@@ -498,7 +506,6 @@
 	padding-top: 40px;
 }
 
-.slider-arrow__icon path {
-	fill: #fff;
-	stroke: #fff;
+.slider-arrow__icon {
+	fill: currentColor;
 }
